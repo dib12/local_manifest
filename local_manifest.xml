@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- unitrix_kernel -->
- <remote name="unitrix_kernel"
-	 fetch="https://github.com/GhostMaster69-dev" />
-
- <!-- dib_repos -->
+  <!-- dib_repos -->
  <remote name="dib_repos"
 	 fetch="https://github.com/dib12" />
- <remote name="gitlab" 
-         fetch="https://gitlab.com" />
 
  <!-- Device tree -->
  <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="dib_repos" revision="lineage-20" clone-depth="1" />
@@ -17,8 +11,7 @@
  <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="dib_repos" revision="lineage-20" clone-depth="1" />
  <project path="vendor/xiaomi/msm8953-common" name="vendor_xiaomi_msm8953-common" remote="dib_repos" revision="lineage-20" clone-depth="1" />
  <project path="vendor/dolby/ds" name="vendor_dolby_ds" remote="dib_repos" revision="lineage-20" clone-depth="1" />
- <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_vince" remote="unitrix_kernel" revision="master" clone-depth="1" />
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
+ <project path="kernel/xiaomi/msm8953" name="temp_android_kernel_xiaomi_vince" remote="dib_repos" revision="lineage-20" clone-depth="1" />
 
  <!-- Framework -->
  <remove-project name="LineageOS/android_frameworks_base" />
