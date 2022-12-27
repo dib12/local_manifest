@@ -38,4 +38,8 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  
+  <!-- audio -->
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" remote="dib_repos" revision="lineage-20.0-caf-msm8996" clone-depth="1" />
 </manifest>
