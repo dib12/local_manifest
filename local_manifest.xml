@@ -2,33 +2,33 @@
 <manifest>
 
  <!-- github -->
- <remote name="githubdib"
+ <remote name="dib_github"
 	 fetch="https://github.com" />
 
  <!-- gitlab -->
- <remote name="gitlab" 
+ <remote name="dib_gitlab" 
          fetch="https://gitlab.com" />
 
  <!-- dib12 -->
- <project path="device/xiaomi/vince" name="dib12/device_xiaomi_vince" remote="githubdib" revision="lineage-20" clone-depth="1" />
- <project path="vendor/xiaomi/vince" name="dib12/vendor_xiaomi_vince" remote="githubdib" revision="lineage-20" clone-depth="1" />
- <project path="device/xiaomi/msm8953-common" name="dib12/device_xiaomi_msm8953-common" remote="githubdib" revision="lineage-20" clone-depth="1" />
- <project path="vendor/xiaomi/msm8953-common" name="dib12/vendor_xiaomi_msm8953-common" remote="githubdib" revision="lineage-20" clone-depth="1" />
- <project path="vendor/dolby/ds" name="dib12/vendor_dolby_ds" remote="githubdib" revision="lineage-20" clone-depth="1" />
+ <project path="device/xiaomi/vince" name="dib12/device_xiaomi_vince" remote="dib_github" revision="lineage-20" clone-depth="1" />
+ <project path="vendor/xiaomi/vince" name="dib12/vendor_xiaomi_vince" remote="dib_github" revision="lineage-20" clone-depth="1" />
+ <project path="device/xiaomi/msm8953-common" name="dib12/device_xiaomi_msm8953-common" remote="dib_github" revision="lineage-20" clone-depth="1" />
+ <project path="vendor/xiaomi/msm8953-common" name="dib12/vendor_xiaomi_msm8953-common" remote="dib_github" revision="lineage-20" clone-depth="1" />
+ <project path="vendor/dolby/ds" name="dib12/vendor_dolby_ds" remote="dib_github" revision="lineage-20" clone-depth="1" />
  
  <!-- kernel -->
- <project path="kernel/xiaomi/msm8953" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="githubdib" revision="master" clone-depth="1" />
+ <project path="kernel/xiaomi/msm8953" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="dib_github" revision="master" clone-depth="1" />
  
  <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="dib_gitlab" revision="master" clone-depth="1" />
 
  <!-- Framework-mod -->
  <remove-project name="LineageOS/android_frameworks_base" />
- <project path="frameworks/base" name="dib12/android_frameworks_base" remote="githubdib" revision="lineage-20.0" clone-depth="1" />
+ <project path="frameworks/base" name="dib12/android_frameworks_base" remote="dib_github" revision="lineage-20.0" clone-depth="1" />
 
  <!-- android_build-mod -->
  <remove-project name="LineageOS/android_build" />
- <project path="build/make" name="dib12/android_build" remote="githubdib" revision="lineage-20.0" clone-depth="1" >
+ <project path="build/make" name="dib12/android_build" remote="dib_github" revision="lineage-20.0" clone-depth="1" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -39,15 +39,15 @@
   
   <!-- audio-mod -->
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="dib12/android_hardware_qcom_audio" remote="githubdib" revision="lineage-20.0-caf-msm8996" clone-depth="1" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="dib12/android_hardware_qcom_audio" remote="dib_github" revision="lineage-20.0-caf-msm8996" clone-depth="1" />
 
    <!-- Remove repos that used by other -->
   <remove-project name="LineageOS/android_frameworks_av" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
   <remove-project name="LineageOS/android_system_core" />
-  <project path="frameworks/av" name="LineageOS/android_frameworks_av" remote="githubdib" revision="lineage-20.0" clone-depth="1" />
-  <project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" remote="githubdib" revision="lineage-20.0" clone-depth="1" />
-  <project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" remote="githubdib" revision="lineage-20.0" clone-depth="1" />
-  <project path="system/core" name="LineageOS/android_system_core" remote="githubdib" revision="lineage-20.0" clone-depth="1" />
+  <project path="frameworks/av" name="LineageOS/android_frameworks_av" remote="dib_github" revision="lineage-20.0" clone-depth="1" />
+  <project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" remote="dib_github" revision="lineage-20.0" clone-depth="1" />
+  <project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" remote="dib_github" revision="lineage-20.0" clone-depth="1" />
+  <project path="system/core" name="LineageOS/android_system_core" remote="dib_github" revision="lineage-20.0" clone-depth="1" />
 </manifest>
